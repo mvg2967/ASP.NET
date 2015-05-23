@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Posts]
+(
+	[ID] INT NOT NULL PRIMARY KEY, 
+    [Title] NVARCHAR(256) NOT NULL, 
+    [DateTime] DATETIME NOT NULL, 
+    [Body] NVARCHAR(MAX) NOT NULL
+)

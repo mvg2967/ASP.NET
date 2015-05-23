@@ -12,16 +12,10 @@ namespace Blog.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Tag
+    public partial class Admin
     {
-        public Tag()
-        {
-            this.Posts = new HashSet<Post>();
-        }
-    
         public int ID { get; set; }
         public string Name { get; set; }
-    
-        public virtual ICollection<Post> Posts { get; set; }
+        public string Password { get; set; }
     }
 }
